@@ -31,10 +31,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-          <div className="min-h-screen bg-background">
+          <div className="min-h-screen gradient-bg">
             <Navigation />
-            <main className="max-w-screen-md mx-auto px-4 py-8">
-              {children}
+            <main className="max-w-screen-md mx-auto px-4 py-8 fade-in">
+              <div className="space-y-8">
+                {children}
+              </div>
             </main>
           </div>
           <Toaster />

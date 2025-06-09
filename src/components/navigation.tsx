@@ -20,13 +20,13 @@ export function Navigation() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <nav className="border-b border-muted">
+    <nav className="glass-card border-b border-border/50 sticky top-0 z-50">
       <div className="max-w-screen-md mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-1">
             <Link 
               href="/" 
-              className="text-xl font-semibold text-foreground hover:text-muted-foreground transition-colors"
+              className="text-xl font-bold heading-gradient hover:scale-105 transition-transform duration-200"
             >
               CycleSync
             </Link>
@@ -43,8 +43,8 @@ export function Navigation() {
                     variant="ghost" 
                     size="sm"
                     className={cn(
-                      "flex items-center space-x-2 text-muted-foreground hover:text-foreground",
-                      isActive && "bg-muted text-foreground"
+                      "flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-all duration-200 focus-ring",
+                      isActive && "bg-primary/10 text-primary border-primary/20"
                     )}
                   >
                     <Icon className="h-4 w-4" />
@@ -58,10 +58,10 @@ export function Navigation() {
               variant="ghost"
               size="sm"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="text-muted-foreground hover:text-foreground"
+              className="text-muted-foreground hover:text-foreground transition-all duration-200 focus-ring hover:bg-primary/10"
             >
-              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all duration-200 dark:-rotate-90 dark:scale-0" />
+              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all duration-200 dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
           </div>

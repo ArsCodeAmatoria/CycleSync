@@ -2,22 +2,22 @@
 
 A clean, minimal fitness tracker web app built with Next.js, focusing on macro tracking, workout logging, and cycle management.
 
-## ✨ Features
+## Features
 
-### 🎯 Core Functionality
+### Core Functionality
 - **Daily Macro Tracking**: Protein, carbs, fiber, and water intake with animated progress bars
 - **Workout Logging**: Track exercises, sets, reps, and muscle groups
 - **Injection Tracker**: Test/Deca cycle management with calendar reminders
 - **Progress Charts**: Weight and macro trends visualization
 - **Settings**: Customizable goals, units, and cycle schedules
 
-### 🎨 Design Philosophy
+### Design Philosophy
 - **Sparse & Clean**: Minimal distractions, maximum utility
 - **Mobile-First**: Responsive design optimized for all devices
 - **Dark/Light Mode**: Automatic theme switching
 - **Centered Layout**: `max-w-screen-md mx-auto` for focused content
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 15 with App Router
 - **Styling**: Tailwind CSS
@@ -27,7 +27,7 @@ A clean, minimal fitness tracker web app built with Next.js, focusing on macro t
 - **Theme**: next-themes
 - **Notifications**: Sonner
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+ 
@@ -54,7 +54,7 @@ A clean, minimal fitness tracker web app built with Next.js, focusing on macro t
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📱 Pages & Navigation
+## Pages & Navigation
 
 ### `/` - Dashboard
 - Daily goal progress for macros and hydration
@@ -83,7 +83,7 @@ A clean, minimal fitness tracker web app built with Next.js, focusing on macro t
 - **Cycle**: Configure injection frequency and reminders
 - **Profile**: Personal information and activity level
 
-## 🎨 Design System
+## Design System
 
 ### Colors & Theming
 - Uses shadcn/ui color system with CSS variables
@@ -102,7 +102,7 @@ A clean, minimal fitness tracker web app built with Next.js, focusing on macro t
 - **Navigation**: Icon + text with active states
 - **Forms**: Consistent input styling and validation
 
-## 🔧 Customization
+## Customization
 
 ### Adding New Macro Types
 1. Update the `mockData` object in `src/app/page.tsx`
@@ -117,7 +117,7 @@ A clean, minimal fitness tracker web app built with Next.js, focusing on macro t
 1. Modify CSS variables in `src/app/globals.css`
 2. Update the shadcn/ui theme configuration
 
-## 📊 Data Structure
+## Data Structure
 
 Currently uses mock data for demonstration. In production, you would integrate with:
 
@@ -155,7 +155,7 @@ interface InjectionEntry {
 }
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 ```bash
@@ -168,7 +168,7 @@ npx vercel --prod
 - **Railway**: `railway deploy`
 - **Docker**: Use the included Dockerfile
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/new-feature`
@@ -176,14 +176,14 @@ npx vercel --prod
 4. Push to branch: `git push origin feature/new-feature`
 5. Submit a pull request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This application is for educational and personal tracking purposes only. Always consult with healthcare professionals for medical advice regarding fitness, nutrition, and any substances or supplements.
 
 ---
 
-**Built with ❤️ using Next.js and shadcn/ui**
+**Built with Next.js and shadcn/ui**
