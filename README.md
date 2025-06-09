@@ -2,6 +2,8 @@
 
 A clean, minimal fitness tracker web app built with Next.js, focusing on macro tracking, workout logging, and cycle management.
 
+![Image](https://github.com/user-attachments/assets/037947bf-b5c1-4a1a-9e0a-9f5f6df162d1)
+
 ## Features
 
 ### Core Functionality
