@@ -20,15 +20,17 @@ export function Navigation() {
   const { theme, setTheme } = useTheme()
 
   return (
-    <nav className="glass-card border-b border-border/50 sticky top-0 z-50">
+    <nav className="glass-card border-b neon-border sticky top-0 z-50 cyber-glow matrix-rain">
       <div className="max-w-screen-md mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-1">
             <Link 
               href="/" 
-              className="text-xl font-bold heading-gradient hover:scale-105 transition-transform duration-200"
+              className="text-xl font-bold heading-gradient hover:scale-105 transition-all duration-300 relative"
             >
-              CycleSync
+              <span className="drop-shadow-[0_0_12px_oklch(0.7_0.4_190_/_0.8)]">
+                CycleSync
+              </span>
             </Link>
           </div>
           
@@ -43,12 +45,19 @@ export function Navigation() {
                     variant="ghost" 
                     size="sm"
                     className={cn(
-                      "flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-all duration-200 focus-ring",
-                      isActive && "bg-primary/10 text-primary border-primary/20"
+                      "flex items-center space-x-2 text-muted-foreground hover:text-primary transition-all duration-300 focus-ring relative overflow-hidden",
+                      "hover:bg-primary/20 hover:shadow-[0_0_15px_oklch(0.7_0.4_190_/_0.3)]",
+                      isActive && "bg-primary/25 text-primary shadow-[0_0_20px_oklch(0.7_0.4_190_/_0.4)] hologram"
                     )}
                   >
-                    <Icon className="h-4 w-4" />
-                    <span className="hidden sm:inline">{item.label}</span>
+                    <Icon className={cn(
+                      "h-4 w-4 transition-all duration-300",
+                      isActive && "drop-shadow-[0_0_8px_oklch(0.7_0.4_190_/_0.8)]"
+                    )} />
+                    <span className={cn(
+                      "hidden sm:inline transition-all duration-300",
+                      isActive && "drop-shadow-[0_0_6px_oklch(0.7_0.4_190_/_0.6)]"
+                    )}>{item.label}</span>
                   </Button>
                 </Link>
               )
@@ -58,10 +67,10 @@ export function Navigation() {
               variant="ghost"
               size="sm"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="text-muted-foreground hover:text-foreground transition-all duration-200 focus-ring hover:bg-primary/10"
+              className="text-muted-foreground hover:text-primary transition-all duration-300 focus-ring hover:bg-primary/20 hover:shadow-[0_0_15px_oklch(0.7_0.4_190_/_0.3)] relative overflow-hidden"
             >
-              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all duration-200 dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all duration-200 dark:rotate-0 dark:scale-100" />
+              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all duration-300 dark:-rotate-90 dark:scale-0 drop-shadow-[0_0_8px_oklch(0.8_0.4_60_/_0.8)]" />
+              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all duration-300 dark:rotate-0 dark:scale-100 drop-shadow-[0_0_8px_oklch(0.7_0.4_190_/_0.8)]" />
               <span className="sr-only">Toggle theme</span>
             </Button>
           </div>
