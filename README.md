@@ -25,18 +25,6 @@
 
 </div>
 
-## 📱 Screenshots
-
-<div align="center">
-
-| Dashboard | Macro Tracking | Cycle Management |
-|-----------|----------------|------------------|
-| ![Dashboard](https://via.placeholder.com/300x200/0a0a0a/00ffff?text=Dashboard) | ![Tracking](https://via.placeholder.com/300x200/0a0a0a/ff00ff?text=Macro+Tracking) | ![Cycle](https://via.placeholder.com/300x200/0a0a0a/00ff00?text=Cycle+Tracker) |
-
-*Cyberpunk-themed UI with neon aesthetics and smooth animations*
-
-</div>
-
 ---
 
 ## ⚡ Features
