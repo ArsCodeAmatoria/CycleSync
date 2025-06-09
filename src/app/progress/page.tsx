@@ -25,14 +25,19 @@ const mockMacroData = [
   { date: "2024-12-08", protein: 150, carbs: 225, fiber: 19 },
 ]
 
+interface ChartDataPoint {
+  [key: string]: number | string
+  date: string
+}
+
 function SimpleChart({ data, dataKey, color = "#3b82f6", unit = "" }: {
-  data: any[]
+  data: ChartDataPoint[]
   dataKey: string
   color?: string
   unit?: string
 }) {
-  const maxValue = Math.max(...data.map(d => d[dataKey]))
-  const minValue = Math.min(...data.map(d => d[dataKey]))
+  const maxValue = Math.max(...data.map(d => Number(d[dataKey])))
+  const minValue = Math.min(...data.map(d => Number(d[dataKey])))
   const range = maxValue - minValue || 1
 
   return (
@@ -44,7 +49,7 @@ function SimpleChart({ data, dataKey, color = "#3b82f6", unit = "" }: {
               className="w-full rounded-t-sm transition-all hover:opacity-80"
               style={{
                 backgroundColor: color,
-                height: `${((item[dataKey] - minValue) / range) * 100}%`,
+                height: `${((Number(item[dataKey]) - minValue) / range) * 100}%`,
                 minHeight: '4px'
               }}
             />

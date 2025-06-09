@@ -11,7 +11,6 @@ interface MacroProgressProps {
   current: number
   target: number
   unit: string
-  color?: string
 }
 
 export function MacroProgress({ 
@@ -19,8 +18,7 @@ export function MacroProgress({
   label, 
   current, 
   target, 
-  unit, 
-  color = "default" 
+  unit
 }: MacroProgressProps) {
   const percentage = target > 0 ? Math.min((current / target) * 100, 100) : 0
   const remaining = Math.max(target - current, 0)
