@@ -1,33 +1,97 @@
-# CycleSync - Modern Fitness Tracker
+```
+  ██████╗██╗   ██╗ ██████╗██╗     ███████╗███████╗██╗   ██╗███╗   ██╗ ██████╗
+ ██╔════╝╚██╗ ██╔╝██╔════╝██║     ██╔════╝██╔════╝╚██╗ ██╔╝████╗  ██║██╔════╝
+ ██║      ╚████╔╝ ██║     ██║     █████╗  ███████╗ ╚████╔╝ ██╔██╗ ██║██║     
+ ██║       ╚██╔╝  ██║     ██║     ██╔══╝  ╚════██║  ╚██╔╝  ██║╚██╗██║██║     
+ ╚██████╗   ██║   ╚██████╗███████╗███████╗███████║   ██║   ██║ ╚████║╚██████╗
+  ╚═════╝   ╚═╝    ╚═════╝╚══════╝╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═══╝ ╚═════╝
+                                                                              
+      🚀 A Modern Cyberpunk Fitness Tracker | Next.js + Tailwind CSS 🚀
+```
 
-A clean, minimal fitness tracker web app built with Next.js, focusing on macro tracking, workout logging, and cycle management.
+<div align="center">
 
-![Image](https://github.com/user-attachments/assets/037947bf-b5c1-4a1a-9e0a-9f5f6df162d1)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-## Features
+**Clean, minimal fitness tracker with cyberpunk aesthetics**  
+*Macro tracking • Workout logging • Cycle management*
 
-### Core Functionality
-- **Daily Macro Tracking**: Protein, carbs, fiber, and water intake with animated progress bars
-- **Workout Logging**: Track exercises, sets, reps, and muscle groups
-- **Injection Tracker**: Test/Deca cycle management with calendar reminders
-- **Progress Charts**: Weight and macro trends visualization
-- **Settings**: Customizable goals, units, and cycle schedules
+![CycleSync Preview](https://github.com/user-attachments/assets/037947bf-b5c1-4a1a-9e0a-9f5f6df162d1)
 
-### Design Philosophy
-- **Sparse & Clean**: Minimal distractions, maximum utility
-- **Mobile-First**: Responsive design optimized for all devices
-- **Dark/Light Mode**: Automatic theme switching
-- **Centered Layout**: `max-w-screen-md mx-auto` for focused content
+[🌟 Live Demo](https://your-demo-url.vercel.app) • [📖 Documentation](#features) • [🚀 Quick Start](#getting-started)
 
-## Tech Stack
+</div>
 
-- **Framework**: Next.js 15 with App Router
-- **Styling**: Tailwind CSS
-- **Components**: shadcn/ui
-- **Icons**: Lucide React
-- **Animations**: Framer Motion
-- **Theme**: next-themes
-- **Notifications**: Sonner
+## 📱 Screenshots
+
+<div align="center">
+
+| Dashboard | Macro Tracking | Cycle Management |
+|-----------|----------------|------------------|
+| ![Dashboard](https://via.placeholder.com/300x200/0a0a0a/00ffff?text=Dashboard) | ![Tracking](https://via.placeholder.com/300x200/0a0a0a/ff00ff?text=Macro+Tracking) | ![Cycle](https://via.placeholder.com/300x200/0a0a0a/00ff00?text=Cycle+Tracker) |
+
+*Cyberpunk-themed UI with neon aesthetics and smooth animations*
+
+</div>
+
+---
+
+## ⚡ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🎯 Core Functionality
+- **Daily Macro Tracking** - Protein, carbs, fiber, water with animated progress
+- **Workout Logging** - Exercises, sets, reps, muscle groups
+- **Injection Tracker** - Test/Deca cycle management with reminders
+- **Progress Charts** - Weight and macro trends visualization
+- **Smart Settings** - Customizable goals, units, schedules
+
+</td>
+<td width="50%">
+
+### 🎨 Design Philosophy
+- **Cyberpunk Aesthetics** - Neon borders, holographic effects
+- **Sparse & Clean** - Minimal distractions, maximum utility
+- **Mobile-First** - Responsive design for all devices
+- **Dark/Light Mode** - Automatic theme switching
+- **Glass Morphism** - Modern translucent UI elements
+
+</td>
+</tr>
+</table>
+
+### 🌟 UI/UX Highlights
+- **Matrix-Style Navigation** - Animated neon borders and cyber glow effects
+- **Holographic Progress Cards** - 3D transforms and gradient animations
+- **Terminal Typography** - Monospace fonts for that hacker aesthetic
+- **Interactive Micro-animations** - Framer Motion powered transitions
+- **Professional Icon System** - Lucide React icons throughout
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Frontend | Styling | Components | Animations |
+|----------|---------|------------|------------|
+| ![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=next.js) | ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css) | ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=flat-square) | ![Framer Motion](https://img.shields.io/badge/Framer-Motion-0055FF?style=flat-square&logo=framer) |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript) | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3) | ![Lucide](https://img.shields.io/badge/Lucide-React-F56565?style=flat-square) | ![Sonner](https://img.shields.io/badge/Sonner-Toast-22C55E?style=flat-square) |
+
+</div>
+
+**Core Dependencies:**
+- **Framework**: Next.js 15 with App Router & TypeScript
+- **Styling**: Tailwind CSS with custom cyberpunk theme
+- **Components**: shadcn/ui for consistent design system
+- **Icons**: Lucide React for professional iconography
+- **Animations**: Framer Motion for smooth transitions
+- **Theme**: next-themes for dark/light mode switching
+- **Notifications**: Sonner for elegant toast messages
 
 ## Getting Started
 
@@ -188,4 +252,24 @@ This application is for educational and personal tracking purposes only. Always 
 
 ---
 
-**Built with Next.js and shadcn/ui**
+<div align="center">
+
+```
+ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+ █  ███████╗██╗   ██╗████████╗██╗   ██╗██████╗ ███████╗    ███████╗██╗████████╗ █
+ █  ██╔════╝██║   ██║╚══██╔══╝██║   ██║██╔══██╗██╔════╝    ██╔════╝██║╚══██╔══╝ █
+ █  █████╗  ██║   ██║   ██║   ██║   ██║██████╔╝█████╗      █████╗  ██║   ██║    █
+ █  ██╔══╝  ██║   ██║   ██║   ██║   ██║██╔══██╗██╔══╝      ██╔══╝  ██║   ██║    █
+ █  ██║     ╚██████╔╝   ██║   ╚██████╔╝██║  ██║███████╗    ██║     ██║   ██║    █
+ █  ╚═╝      ╚═════╝    ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═╝     ╚═╝   ╚═╝    █
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+```
+
+**Built with ❤️ and cyberpunk aesthetics**
+
+[![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-000000?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Powered by shadcn/ui](https://img.shields.io/badge/Powered%20by-shadcn/ui-000000?style=for-the-badge)](https://ui.shadcn.com/)
+
+*Track your gains in style* 🚀
+
+</div>
